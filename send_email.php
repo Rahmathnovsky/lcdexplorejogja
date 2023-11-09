@@ -9,9 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $messageText = $_POST["message"];
 
     // Buat objek Transporter dengan SMTP Gmail
-    $transport = (new Swift_SmtpTransport('smtp.gmail.com', 587, 'tls'))
-      ->setUsername('others.cookies@gmail.com') // Ganti dengan alamat email Anda
-      ->setPassword('@Password.1'); // Ganti dengan kata sandi aplikasi Gmail yang dihasilkan
+    $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
+      ->setUsername('others.cookies@gmail.com')
+      ->setPassword('@Password.1');
+      //->setPassword('@Password.1');
 
     // Buat objek Mailer menggunakan Transporter
     $mailer = new Swift_Mailer($transport);
@@ -19,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Buat objek Pesan
     $message = (new Swift_Message($subject))
       ->setFrom([$email => $name])
-      ->setTo(['recipient@example.com' => 'Recipient Name']) // Ganti dengan alamat email penerima
+      ->setTo(['aziz.zaind@yahoo.com' => 'Recipient Name']) // Ganti dengan alamat email penerima
       ->setBody($messageText);
 
     // Kirim email
