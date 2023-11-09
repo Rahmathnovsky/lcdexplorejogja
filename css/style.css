@@ -337,7 +337,7 @@ h5.subtitle {
 }
 
 .gr-overlay {
-  background: linear-gradient(135deg, #2f1ce0 0%, #53a0fd 30%, #51eca5 100%);
+  background: linear-gradient(135deg, #2f1ce0 0%, #e4aa0b 30%, #51eca5 50%);
   opacity: 0.87;
 }
 
