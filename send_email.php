@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Buat objek Transporter dengan SMTP Gmail
     $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
-      ->setUsername('others.cookies@gmail.com')
+      ->setUsername('lcdexplorejogjatesting@gmail.com')
       ->setPassword('@Password.1');
       //->setPassword('@Password.1');
 
