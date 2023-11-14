@@ -652,6 +652,11 @@ INner Pages
   background-size: cover;
 }
 
+.page-banner-blog {
+  background: url("../images/banner/blog-banner.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
 .page-banner-yogyakarta {
   background: url("../images/blog/yogyakarta.png") no-repeat 50% 50%;
   background-size: cover;
